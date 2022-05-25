@@ -2,7 +2,8 @@
 import Head from 'next/head';
 
 import Link from 'next/link';
-import Hero from '../components/Layout/Hero';
+import About from '../components/About';
+import Hero from '../components/Hero';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       </Head>
 
       <Hero />
+      <About />
     </div>
   );
 }
