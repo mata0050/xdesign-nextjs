@@ -23,6 +23,7 @@ module.exports = {
         darkGrey: '#191919',
         lightGrey: '#f7f7f7',
         silver: '#B7B4B9',
+        lightBrown: '#F9EFE7',
         warning: '#ffd200',
         danger: 'rgb(250, 7, 7)',
         success: 'rgb(118, 170, 14)',
