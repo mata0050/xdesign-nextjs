@@ -27,7 +27,7 @@ const workData = [
 
 export default function OurWork({}) {
   return (
-    <div className='bg-darkGrey sm:p-24 text-white  px-10 py-20 lg:my-0 lg:mb-24 my-10'>
+    <div className='bg-lightGrey sm:p-24   px-10 py-20 lg:my-0 lg:mb-24 my-10'>
       <h1 className='text-center text-4xl mb-16'>Our Work</h1>
 
       {workData.map((work) => (
