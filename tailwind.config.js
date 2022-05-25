@@ -18,17 +18,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        orange: '#ef8336',
-        lightOrange: '#feead6',
-        lightBrown: '#f1e8d6',
-        lighterBrown: '#fbf7f3',
-        brown: '#a29071',
-        darkBrown: '#26282c',
         white: '#ffffff',
         black: '#000000',
         darkGrey: '#191919',
         lightGrey: '#f7f7f7',
-        silver: '#eee',
+        silver: '#B7B4B9',
         warning: '#ffd200',
         danger: 'rgb(250, 7, 7)',
         success: 'rgb(118, 170, 14)',

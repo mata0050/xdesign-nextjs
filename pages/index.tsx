@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/About';
 import Hero from '../components/Hero';
+import Review from '../components/Review';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
 
       <Hero />
       <About />
+      <Review />
     </div>
   );
 }

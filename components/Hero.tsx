@@ -1,6 +1,6 @@
 export default function Hero({}) {
   return (
-    <main className='bg-darkGrey'>
+    <div className='bg-darkGrey'>
       <div className='flex flex-col items-center flex-wrap lg:flex-row'>
         <img
           className='mt-20 lg:w-1/2 lg:px-0 sm:px-24 px-10'
@@ -20,6 +20,6 @@ export default function Hero({}) {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

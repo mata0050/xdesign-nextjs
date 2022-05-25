@@ -1,6 +1,6 @@
 export default function About({}) {
   return (
-    <main className='sm:p-24 px-10 sm:mt-0 mt-20'>
+    <div className='sm:p-24 px-10 sm:mt-0 mt-20'>
       <h2 className='text-4xl font-medium mb-12'>
         We Build Websites, Mobile Apps and more !
       </h2>
@@ -33,6 +33,6 @@ export default function About({}) {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
