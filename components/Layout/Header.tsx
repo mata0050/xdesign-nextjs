@@ -33,7 +33,7 @@ const Header = ({}) => {
         <div className='flex items-center justify-between'>
           <div className='pt-2'>
             <Link href='/'>
-              <img src='images/XDesign-logo.svg' alt='XDesign Logo' />
+              <img src='images/XDesign-logo.png' alt='XDesign Logo' className='w-28' />
             </Link>
           </div>
           <div className='hidden lg:flex space-x-4'>{guestLinks}</div>
