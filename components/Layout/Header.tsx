@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-const Header = ({ }) => {
+const Header = ({}) => {
   const [showMobileMenu, setMobileMenu] = useState<boolean>(false);
 
   const onShowMobileMenu = () => setMobileMenu((preState) => !preState);
-
-
 
   const guestLinks = (
     <>
@@ -16,9 +14,7 @@ const Header = ({ }) => {
         </a>
       </Link>
       <Link href='/#our-work'>
-        <a
-          className='hover:text-orange '
-        >
+        <a className='hover:text-orange ' onClick={onShowMobileMenu}>
           Our Work
         </a>
       </Link>
@@ -63,8 +59,8 @@ const Header = ({ }) => {
             id='menu'
             className={
               showMobileMenu
-                ? 'absolute flex flex-col items-center self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg'
-                : 'absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg'
+                ? 'absolute flex flex-col items-center self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg rounded-full'
+                : 'absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg rounded-full'
             }
           >
             {guestLinks}
