@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import OurWork from '../components/OurWork';
 import Review from '../components/Review';
 import Header from '../components/Layout/Header';
+import Pricing from '../components/Pricing';
 
 function Home({}) {
   return (
@@ -13,6 +14,7 @@ function Home({}) {
       <About />
       <OurWork />
       <Review />
+      <Pricing />
     </div>
   );
 }
