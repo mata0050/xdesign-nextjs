@@ -5,7 +5,7 @@ export default function ContactUs({}) {
         <iframe
           src='https://docs.google.com/forms/d/e/1FAIpQLScrq0CFwtEmQRXpDZ1A8pOnYrHbPILPU-kr8WHGmk7fvmt_nA/viewform?embedded=true'
           // width='640'
-          height='1506'
+          height='1606'
           // frameborder='0'
           className='mx-auto lg:w-1/2  w-full'
         >

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BsCheckAll } from 'react-icons/bs';
 
 const priceList = [
@@ -48,7 +49,7 @@ export default function Pricing({}) {
           <div className='rounded-xl  bg-white  p-6 md:w-1/3 ' key={price.id}>
             <h3 className='text-xl font-bold text-center'>{price.title}</h3>
             <span className='flex items-center justify-center text-center block mt-4 text-4xl font-thin'>
-            <span className='text-xs mr-2'>starting</span>
+              <span className='text-xs mr-2'>starting</span>
               {price.price}
             </span>
 
@@ -61,9 +62,11 @@ export default function Pricing({}) {
               ))}
             </ul>
 
-            <button className='bg-lightGrey py-2 px-4 mt-12 rounded-full uppercase mx-auto block hover:bg-black hover:text-white'>
-              Order Now
-            </button>
+            <Link href='/contact-us'>
+              <a className='bg-lightGrey py-2 px-4 mt-12 rounded-full w-36 uppercase mx-auto block hover:bg-black hover:text-white'>
+                Order Now
+              </a>
+            </Link>
           </div>
         ))}
       </div>
