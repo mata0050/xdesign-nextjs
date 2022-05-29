@@ -1,3 +1,13 @@
+import { AiFillStar } from 'react-icons/ai';
+
+const starRating = (numberOfStars) => {
+  let stars = [];
+  for (let i = 0; i < numberOfStars; i++) {
+    stars.push(<AiFillStar key={i} className='text-warning' />);
+  }
+  return stars;
+};
+
 export default function Review({}) {
   return (
     <div className='flex lg:flex-nowrap lg:mb-24 flex-wrap lg:p-0 sm:p-24 sm:my-0 my-20 px-10'>
@@ -12,7 +22,6 @@ export default function Review({}) {
         <h4 className='text-2xl mb-2 font-bold text-silver'>
           What people say about XDesign.
         </h4>
-
         <p className='italic text-lg font-thin mb-10'>
           "I have learned some absolutely invaluable information, stuff that I
           would never have even thought about. Mike and Josh have not only built
@@ -23,6 +32,7 @@ export default function Review({}) {
           highly recommend Mike and his team at XDesign. Thanks Mike, for all
           your hard work."
         </p>
+        <span className='flex'>{starRating(5)}</span>
 
         <span className='font-bold text-lg'>Vanilla Cleaning</span>
       </div>
