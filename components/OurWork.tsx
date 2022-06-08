@@ -1,31 +1,31 @@
 const workData = [
   {
+    id: 4,
+    title: 'Covid App',
+    workType: ['Web Development', 'Web App'],
+    description:
+      'The Covid app was created to keep track of covid cases in the province of Ontario. This web app could be downloaded and installed on any smartphone.',
+    image: 'images/covid-app.jpg',
+  },
+  {
     id: 1,
-    title: 'Fortcode College',
+    title: 'Car Dealership',
     workType: ['Web Development', 'Mobile Responsive'],
     description:
       'Re-design WordPress website as the site was slow to load, and information was not organized in a easy-to-digest way.',
-    image: 'images/Fortcode-College.png',
+    image: 'images/car-dealership.jpg',
   },
   {
     id: 2,
-    title: 'Zimbabwe Embassy',
-    workType: ['Web Development', 'Mobile Responsive'],
+    title: 'Bike Dealership',
+    workType: ['Web Development', 'Web App', 'E-Commerce Website'],
     description:
-      'Re-Designed the Zimbabwe Embassy website as the old website we slow and information was in disarray.',
-    image: 'images/Zimbabwe-Embassy.png',
-  },
-  {
-    id: 3,
-    title: 'Vanilla Cleaning',
-    workType: ['Web Development', 'Mobile Responsive'],
-    description:
-      'Full website design that is fully responsive and reformats on smartphones and tablets.',
-    image: 'images/vanilla-cleaning.png',
+      'Re-Designed the website as the old website we slow and information was in disarray. Customer wanted to sell more bikes online, developed a custom E-Commerce site.',
+    image: 'images/bike-dealership.jpg',
   },
 ];
 
-export default function OurWork({  }) {
+export default function OurWork({}) {
   return (
     <div
       className='bg-darkGrey sm:p-24  text-white px-10 py-20 lg:my-0 lg:mb-24 my-10'
@@ -45,7 +45,7 @@ export default function OurWork({  }) {
             <div className='flex mb-6 lg:justify-start justify-center gap-2'>
               {work.workType.map((workType) => (
                 <span
-                  className='bg-lightBrown text-black md:text-sm text-xs py-1 px-2 font-bold'
+                  className='bg-lightBrown text-black md:text-sm text-xs py-1 px-2 font-bold '
                   key={workType}
                 >
                   {workType}
@@ -53,7 +53,7 @@ export default function OurWork({  }) {
               ))}
             </div>
 
-            <p className='lg:w-4/6 dm:w-6/12 lg:mx-0 mx-auto  '>
+            <p className='lg:w-5/6 dm:w-6/12 lg:mx-0 mx-auto  '>
               {work.description}
             </p>
           </div>
