@@ -53,7 +53,7 @@ export default function OurWork({}) {
               ))}
             </div>
 
-            <p className='lg:w-5/6 dm:w-6/12 lg:mx-0 mx-auto  '>
+            <p className='lg:w-5/6 dm:w-6/12 lg:mx-0 mx-auto text-xl font-thin '>
               {work.description}
             </p>
           </div>
