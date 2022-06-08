@@ -5,9 +5,10 @@ const priceList = [
   {
     id: 1,
     title: 'Simple Website',
-    price: '$299.99',
+    price: '$699.99',
+    description:
+      'Static websites are examples of simple websites. This is a static website that you are viewing. Static sites do not allow users to log in.',
     included: [
-      '3 Page Website',
       'Contact Form',
       'Mobile Responsive',
       'Complete Deployment',
@@ -16,25 +17,31 @@ const priceList = [
   },
   {
     id: 2,
-    title: 'Small Business Website',
-    price: '$799.99',
+    title: 'Web App',
+    price: '$1499.99',
+    description:
+      'A Web Application is a website that requires all users to sign in. Ecommerce websites, social networking websites such as Instagram are examples of Web Apps.',
     included: [
-      '10 Page Website',
       'Admin Panel /CMS',
       'Contact Form',
       'Mobile Responsive',
+      'Database Backup',
       'Complete Deployment',
     ],
   },
   {
     id: 3,
-    title: 'Custom Business Website',
-    price: '$2999.99',
+    title: 'Business Web App',
+    price: '$3999.99',
+    description:
+      'A Web Application is a website that requires all users to sign in. Ecommerce websites, social networking websites such as Instagram are examples of Web Apps.',
+
     included: [
-      '25 Page Website',
       'Admin Panel /CMS',
       'Contact Form',
       'Mobile Responsive',
+      'Database Backup',
+      'Manage Database',
       'Complete Deployment',
     ],
   },
@@ -53,6 +60,8 @@ export default function Pricing({}) {
               {price.price}
             </span>
 
+
+
             <ul className='my-6 sm:mt-10 md:w-full w-64 mx-auto '>
               {price.included.map((includes) => (
                 <li className='flex flex-row ' key={includes}>
@@ -61,6 +70,7 @@ export default function Pricing({}) {
                 </li>
               ))}
             </ul>
+              <p className='mt-6 text-sm'>{price.description}</p>
 
             <Link href='/contact-us'>
               <a className='bg-lightGrey py-2 px-4 mt-12 rounded-full w-36 uppercase mx-auto block hover:bg-black hover:text-white'>

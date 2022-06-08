@@ -9,13 +9,18 @@ import Pricing from '../components/Pricing';
 
 function Home({}) {
   return (
-    <div>
-      <Hero />
-      <About />
-      <OurWork />
-      <Review />
-      <Pricing />
-    </div>
+    <>
+      <Head>
+        <title>XDesgin - Web Development</title>
+      </Head>
+      <div>
+        <Hero />
+        <About />
+        <OurWork />
+        <Review />
+        <Pricing />
+      </div>
+    </>
   );
 }
 

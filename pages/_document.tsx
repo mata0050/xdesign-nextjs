@@ -41,7 +41,7 @@ class MyDocument extends Document {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
           <meta name='msapplication-TileColor' content='#da532c' />
           <meta name='theme-color' content='#ffffff' />
-          <title>XDesgin - Web Development</title>
+         
           <meta
             content='XDesign is passionate about creating websites and user interfaces (UI Design). We use all our knowledge to help our clients build their brands through interactivity.'
             name='description'
