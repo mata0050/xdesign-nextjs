@@ -49,13 +49,13 @@ const priceList = [
 
 export default function Pricing({}) {
   return (
-    <div className='bg-lightGrey '>
-      <h1 className='text-4xl font-bold text-center py-12'>Pricing</h1>
+    <div className='bg-lightGrey pt-12 ' id='pricing'>
+      <h1 className='text-4xl font-bold text-center py-12 '>Pricing</h1>
 
       <p className='mb-6 w-4/6 mx-auto'>
         All of our websites are one-of-a-kind. We don't use wordpress templates
         since we understand that our clients want to be different. We create the
-        website according to your specifications.{' '}
+        website according to your specifications.
       </p>
       <div className='flex p-6 gap-12 flex-col md:flex-row flex-wrap lg:flex-nowrap '>
         {priceList.map((price) => (

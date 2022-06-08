@@ -18,7 +18,11 @@ const Header = ({}) => {
           Our Work
         </a>
       </Link>
-
+      <Link href='/#pricing'>
+        <a className='hover:text-orange ' onClick={onShowMobileMenu}>
+          Pricing
+        </a>
+      </Link>
       <Link href='/contact-us'>
         <a className='hover:text-orange' onClick={onShowMobileMenu}>
           Contact Us
